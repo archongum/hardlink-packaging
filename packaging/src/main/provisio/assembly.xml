@@ -1,0 +1,16 @@
+<runtime>
+    <!-- Target -->
+    <archive name="${project.artifactId}-${project.version}.tar.gz"  hardLinkIncludes="**/*.jar"/>
+
+    <artifactSet to="plugin/mysql">
+        <artifact id="${project.groupId}:mysql:zip:${project.version}">
+            <unpack />
+        </artifact>
+    </artifactSet>
+
+    <artifactSet to="plugin/mysql-presto">
+        <artifact id="${project.groupId}:mysql-presto:zip:${project.version}">
+            <unpack />
+        </artifact>
+    </artifactSet>
+</runtime>
